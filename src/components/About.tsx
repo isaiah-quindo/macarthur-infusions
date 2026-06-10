@@ -10,7 +10,7 @@ export default function About() {
             <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-brand-blue-dark md:text-4xl lg:text-5xl">
               Meet the founder.
               <br />
-              <span className="italic text-brand-green">Vanessa Mordeno, RN</span>
+              <span className="italic text-brand-green text-2xl md:text-3xl lg:text-4xl">Vanessa Mordeno, RN</span>
             </h2>
             <p className="mt-3 text-sm font-medium uppercase tracking-[0.14em] text-brand-muted">
               Founder & Clinical Director

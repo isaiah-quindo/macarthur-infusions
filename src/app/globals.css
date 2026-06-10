@@ -1,4 +1,20 @@
-@import "tailwindcss";
+@import "../styles/globals.css";
+
+/* Remap Untitled UI's default purple brand scale to the clinic's green
+   so components like Select pick up the site palette. */
+@theme {
+  --color-brand-50: #f1f9f4;
+  --color-brand-100: #def1e5;
+  --color-brand-200: #bfe3cd;
+  --color-brand-300: #92cdaa;
+  --color-brand-400: #61b182;
+  --color-brand-500: #3b9a63;
+  --color-brand-600: #1f8a4a;
+  --color-brand-700: #166a39;
+  --color-brand-800: #135530;
+  --color-brand-900: #104628;
+  --color-brand-950: #082715;
+}
 
 :root {
   --background: #ffffff;

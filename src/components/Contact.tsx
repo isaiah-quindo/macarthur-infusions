@@ -1,5 +1,8 @@
 "use client";
 
+import { Input } from "@/components/base/input/input";
+import { Select } from "@/components/base/select/select";
+import { TextArea as UITextArea } from "@/components/base/textarea/textarea";
 import Reveal from "./Reveal";
 
 export default function Contact() {
@@ -162,24 +165,21 @@ function Field({
 }: {
   label: string;
   id: string;
-  type?: string;
+  type?: "text" | "tel" | "email";
   placeholder?: string;
   className?: string;
 }) {
   return (
     <div className={className}>
-      <label
-        htmlFor={id}
-        className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted"
-      >
+      <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted">
         {label}
-      </label>
-      <input
-        id={id}
+      </span>
+      <Input
+        aria-label={label}
         name={id}
         type={type}
         placeholder={placeholder}
-        className="mt-2 w-full rounded-lg border border-brand-border bg-white px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/60 focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/15"
+        className="mt-2"
       />
     </div>
   );
@@ -198,27 +198,18 @@ function SelectField({
 }) {
   return (
     <div className={className}>
-      <label
-        htmlFor={id}
-        className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted"
-      >
+      <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted">
         {label}
-      </label>
-      <select
-        id={id}
+      </span>
+      <Select
+        aria-label={label}
         name={id}
-        defaultValue=""
-        className="mt-2 w-full rounded-lg border border-brand-border bg-white px-4 py-3 text-sm text-brand-ink focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/15"
+        placeholder="Select an option"
+        className="mt-2"
+        items={options.map((o) => ({ id: o, label: o }))}
       >
-        <option value="" disabled>
-          Select an option
-        </option>
-        {options.map((o) => (
-          <option key={o} value={o}>
-            {o}
-          </option>
-        ))}
-      </select>
+        {(item) => <Select.Item {...item} />}
+      </Select>
     </div>
   );
 }
@@ -236,18 +227,15 @@ function TextArea({
 }) {
   return (
     <div className={className}>
-      <label
-        htmlFor={id}
-        className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted"
-      >
+      <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-brand-muted">
         {label}
-      </label>
-      <textarea
-        id={id}
+      </span>
+      <UITextArea
+        aria-label={label}
         name={id}
         rows={4}
         placeholder={placeholder}
-        className="mt-2 w-full rounded-lg border border-brand-border bg-white px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/60 focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/15"
+        className="mt-2"
       />
     </div>
   );
