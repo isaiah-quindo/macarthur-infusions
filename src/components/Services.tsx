@@ -206,13 +206,14 @@ export default function Services() {
 
         <Reveal className="mt-14 text-center" delay={0.05}>
           <p className="text-sm text-brand-muted">
-            Not sure which treatment is right for you?
+            Ready to start? Our nurse-led team will guide you to the right
+            treatment.
           </p>
           <a
             href="#contact"
             className="mt-3 inline-flex items-center gap-2 rounded-full bg-brand-blue-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-blue"
           >
-            Book a nurse-led consultation
+            Book an appointment
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
               <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

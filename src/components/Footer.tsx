@@ -61,6 +61,32 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555645624579"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Macarthur Infusions on Facebook"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/85 transition hover:border-brand-orange hover:text-brand-orange"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/macarthur.infusions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Macarthur Infusions on Instagram"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/85 transition hover:border-brand-orange hover:text-brand-orange"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 

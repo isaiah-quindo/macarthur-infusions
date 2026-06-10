@@ -52,7 +52,7 @@ export default function Contact() {
               onSubmit={(e) => e.preventDefault()}
             >
               <h3 className="font-display text-2xl font-semibold text-brand-blue-dark">
-                Request a consultation
+                Book an appointment
               </h3>
               <p className="mt-2 text-sm text-brand-muted">
                 Share a few details and we&apos;ll be in touch within one

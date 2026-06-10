@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
   { href: "#why", label: "Why Us" },
   { href: "#contact", label: "Contact" },
 ];
@@ -67,7 +67,7 @@ export default function Navbar() {
             href="#contact"
             className="rounded-full bg-brand-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-orange-soft hover:shadow-md"
           >
-            Book a Consultation
+            Book an Appointment
           </a>
         </nav>
 
@@ -134,7 +134,7 @@ export default function Navbar() {
               open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
             }`}
           >
-            Book a Consultation
+            Book an Appointment
           </a>
         </nav>
       </div>
